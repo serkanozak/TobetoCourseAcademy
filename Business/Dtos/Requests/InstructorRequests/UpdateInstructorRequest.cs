@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
-using Core.Entities;
 
-namespace Entities.Concretes
+namespace Business.Dtos.Requests.InstructorRequests
 {
-    public class Category : Entity<Guid>
+    public class UpdateInstructorRequest
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
-        public List<Course> Courses { get; set; }
     }
 }
